@@ -1,0 +1,46 @@
+<html>
+<head>
+<script language="javascript">
+function fun_add()
+{
+var num1=document.getElementById("txt_num1").value;
+var num2=document.getElementById("txt_num2").value;
+var ans=parseInt(num1)+parseInt(num2);
+document.getElementById("txt_ans").value=ans;
+}
+function fun_sub()
+{
+var num1=document.getElementById("txt_num1").value;
+var num2=document.getElementById("txt_num2").value;
+var ans=parseInt(num1)-parseInt(num2);
+document.getElementById("txt_ans").value=Math.abs(ans);
+}
+function fun_mul()
+{
+var num1=document.getElementById("txt_num1").value;
+var num2=document.getElementById("txt_num2").value;
+var ans=parseInt(num1)*parseInt(num2);
+document.getElementById("txt_ans").value=ans;
+}
+function fun_div()
+{
+var num1=document.getElementById("txt_num1").value;
+var num2=document.getElementById("txt_num2").value;
+var ans=parseInt(num1)/parseInt(num2);
+document.getElementById("txt_ans").value=parseInt(ans);
+}
+
+</script>
+<body>
+<center><h1>Design of an arithematic calculator</h1></center><br>
+Number1:<input type="text" id="txt_num1" value=""><br><br>
+Number2:<input type="text" id="txt_num2" value=""><br><br>
+Answer&nbsp; &nbsp;&nbsp;<input type="text" id="txt_ans" value=""><br><br>
+<input type="button" id="btn_add"value="+"onclick="fun_add()">&nbsp;
+<input type="button" id="btn_sub"value="-"onclick="fun_sub()">&nbsp;
+<input type="button" id="btn_multiply"value="x"onclick="fun_mul()">&nbsp;
+<input type="button" id="btn_div"value="/"onclick="fun_div()">&nbsp;
+</body>
+</head>
+</html>
+
