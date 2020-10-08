@@ -1,0 +1,32 @@
+<html>
+<title>
+The first javascript page
+</title>
+<head>
+	<script type="text/javascript">
+	function fun_add()
+	{
+	var ans;
+	var num1;
+	var num2;
+	num1=parseInt(document.getElementById("txtnum1").value);
+	num2=parseInt(document.getElementById("txtnum2").value);
+	ans=parseInt(num1)+parseInt(num2);
+	document.getElementById("txtans").value=ans;
+	}
+	function fun_reset()
+	{
+	document.getElementById("txtnum1").value="";
+	document.getElementById("txtnum2").value="";
+	document.getElementById("txtans").value="";
+	}
+	</script>
+</head>
+<body style="background-color:#ff76ff;font-size:20px;text-align:center">
+Number1<input type="text" id="txtnum1" value=""><br><br>
+Number2<input type="text" id="txtnum2" value=""><br><br>
+Answer<input type="text" id="txtans" value=""><br><br>
+<input type="button" name="btn_click" onclick="fun_add()" value="ADD">
+<input type="reset" name="btn_click" onclick="fun_reset()"value="reset"><br><br>
+</body>
+</html>
