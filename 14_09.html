@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function test_method1()
+	{
+		window.alert("Welcome");
+	}
+	function test_method2()
+	{
+		var v1=parseInt(prompt("Enter a Number",10));
+		var v2=parseInt(prompt("Enter a Number",10));
+		var ans=v1+v2;
+		alert(ans);
+	}
+	function test_method3()
+	{
+		var v1=parseInt(document.getElementById("txt1").value);
+		var v2=parseInt(document.getElementById("txt2").value);
+		if(v1==0||v2==0)
+			{
+			var temp=confirm("Do you wnat to continue");
+			if(temp)
+				{
+				v1=10;
+				v2=10;
+				}
+			else
+				document.getElementById("txt3").value="";
+			}
+		
+		
+		var ans=v1+v2;
+		document.getElementById("txt3").value=ans;		
+	}
+</script>
+</head>
+<body>
+<form name="form1">
+Number1 :<input type="text" id="txt1" value=""><br><br>
+Number2 :<input type="text" id="txt2" value=""><br><br>
+Answer  :<input type="text" id="txt3" value=""><br><br>
+
+<input type="button" id="btn1" value="Method1" onclick="test_method1()"><br>
+<input type="button" id="btn2" value="Method2" onclick="test_method2()"><br>
+<input type="button" id="btn3" value="Method3" onclick="test_method3()">
+</form>
+</body>
+</html>
