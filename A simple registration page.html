@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating a template</title>
+</head>
+<style>
+	#mn
+	{
+		width:650px;
+		height:550px;
+		border:1px solid black;
+		margin: auto;
+		background:#f3f3f3;
+		box-shadow:1px 1px 1px 1px grey;
+	}
+	#rw
+	{
+	width:99%;
+	height:40px;
+	border:1px solid #f3f3f3;
+	}
+	.cl
+	{
+	width:32%;
+	height:90%;
+	border:1px solid #f3f3f3;
+	float:left;
+	margin:2px;
+	}
+	input
+	{
+	height:30px;
+	width:200px;
+	border-radius:2px;
+	font-size:25px;
+	}
+	input:hover
+	{
+	border:1px solid red;
+	background:grey;
+	}
+</style>
+<script type="text/javascript">
+function test_blank(id1,id2)
+{
+	var str=document.getElementById(id1).value;
+	if(str.length==0){
+		document.getElementById(id2).innerHTML="Please Enter the value";
+	}
+	else 
+		{
+		document.getElementById(id2).innerHTML="";
+		}
+}
+</script>
+<body>
+<div id="mn">
+<h5 align="center">Registration Page</h5>
+	<div id="rw"style="color:black">
+	<div class="cl">First Name</div>
+	<div class="cl"><input type="text" id="text1" value=""onkeypress="alert('hi')" onblur="test_blank('text1','error1')"></div>
+	<div class="cl"id="error1" style="color:red"></div>
+	</div>
+	
+	<div id="rw"style="color:black">
+	<div class="cl">Last Name</div>
+	<div class="cl"><input type="text" id="text2" value="" onblur="test_blank('text2','error2')"></div>
+	<div class="cl"id="error2" style="color:red"></div>
+	</div>
+
+	<div id="rw"style="color:black">
+	<div class="cl">Email</div>
+	<div class="cl"><input type="text" id="text3" value="" onblur="test_blank('text3','error3')"></div>
+	<div class="cl"id="error3" style="color:red" ></div>
+	</div>
+	
+		<div id="rw"style="color:black">
+	<div class="cl">Password</div>
+	<div class="cl"><input type="password" id="pwd1" value="" size=20></div>
+	<div class="cl"id="error4" style="color:red" ></div>
+	</div>
+	
+		<div id="rw"style="color:black">
+	<div class="cl">Confirm Password</div>
+	<div class="cl"><input type="password" id="pwd2" value="" size=20></div>
+	<div class="cl"id="error5" style="color:red" ></div>
+	</div>
+	
+		<div id="rw"style="color:black">
+	<div class="cl">Address</div>
+	<div class="cl"><textarea name="address" rows=5 cols=15></textarea></div>
+	<div class="cl"id="error6" style="color:red" ></div>
+	</div>
+</div>
+</body>
+</html>
