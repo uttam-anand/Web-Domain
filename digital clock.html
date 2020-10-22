@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HELLO</title>
+<script type="text/javascript">
+function test_time()
+{
+	var dt=new Date();
+	var tm=dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds();
+	document.getElementById("txt").value=tm;
+	setInterval("test_time()",1000);
+	
+}
+</script>
+</head>
+<body onload="test_time()">
+<form name="form1">
+<input type="text"  id="txt" value="">
+</form>
+
+</body>
+</html>
