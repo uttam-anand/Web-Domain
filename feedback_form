@@ -1,0 +1,35 @@
+<html >
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%;
+            height: 37%;
+            background-color:grey;
+            border: 5px black;
+            border-bottom-style:solid;
+            border-left-style:solid;
+            border-left-width:2px;	
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="">
+            <h1>Feedback form</h1>
+            Name: <input type="text"><br><br>
+            General impression of answers : <input type="radio" name="answers">Good&nbsp;
+            <input type="radio" name="answers">Sufficient&nbsp;
+            <input type="radio" name="answers">Not sufficient&nbsp;<br><br>
+            General impression of lay-out : <input type="radio" name="layout">Good&nbsp;
+            <input type="radio" name="layout">Sufficient&nbsp;
+            <input type="radio" name="layout">Not sufficient&nbsp;<br><br>
+             General feeddback: <input type="text">
+            <input type="submit" name="" id="" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
